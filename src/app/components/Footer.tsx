@@ -17,7 +17,7 @@ export default function Footer(){
 					</div>
 					<div id="card-text">@Copyright 2024</div>
 				</div>
-				<div className="flex flex-col w-full justify-between lg:flex-row w-full gap-5 px-2 pb-5">
+				<div className="flex flex-col justify-between lg:flex-row w-full gap-5 px-2 pb-5">
 					<div className="flex flex-row lg:flex-col gap-2 align-left">
 						<Link href="#" className="mb-2">
 							<div>Product</div>

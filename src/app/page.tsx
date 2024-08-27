@@ -11,7 +11,7 @@ import Dashboard from "@/../public/dashboard.png";
 import Card1 from "@/../public/BlCard1.png";
 import Card2 from "@/../public/BlCard2.png";
 import Card3 from "@/../public/BlCard3.png";
-import { InitiativesIcon, CrossTeamsIcon, MilestonesIcon, ProgressIcon, WorkflowIcon, ViewIcon, FilterIcon, SLAIcon } from "./components/Icons";
+import { InitiativesIcon, CrossTeamsIcon, MilestonesIcon, ProgressIcon, WorkflowIcon, ViewIcon, FilterIcon, SLAIcon, AddIcon } from "./components/Icons";
 import { CardComp } from "./components/CarrouselCard";
 import { ButtonPrimary, ButtonSecondary } from "./components/Buttons";
 
@@ -31,13 +31,13 @@ export default function Home() {
 
 
   return (
-    <main className={`${roboto.className} flex min-h-screen max-w-screen flex-col py-20 mb-100 h-500 gap-4`}>
+    <main className={`${roboto.className} flex min-h-screen overflow-hidden max-w-screen flex-col py-36 mb-100 h-500 gap-4`}>
       
       <div id="Hero-Section" className="flex flex-col px-11 md:px-24">
-        <div id='root' className="flex flex-col align-left py-5 gap-3 mt-14">
+        <div id='root' className="flex flex-col align-left gap-3 mt-14">
           <div className="text-2xl md:text-5xl font-semibold max-w-3xl">Linear is a purpose - built tool for planning and building projects</div>
           <div className="text-md md:text-2xl text-white/70 max-w-xl mt-2 translate-y-2 font-normal">Meet the system for modern software development. Streamline issues, projects and product roadmaps.</div>
-          <div className="flex flex-row gap-3 py-8">
+          <div className="flex flex-row gap-5 pt-14">
             <ButtonPrimary>Start Building</ButtonPrimary>
             <ButtonSecondary>Introducing initiatives</ButtonSecondary>
           </div>
@@ -61,7 +61,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div id="Customers-Section" className=" max-w-96 md:max-w-2xl flex flex-col lg:min-w-full flex-none mx-auto px-11 md:px-24 pt-8 relative">
+      <div id="Customers-Section" className=" max-w-96 md:max-w-2xl flex flex-col lg:min-w-full flex-none mx-auto px-11 md:px-24 py-28 relative">
         
         <div id="customers-text" className="text-md md:text-2xl text-white w-fit text-center mx-auto">Powering the world&apos;s best product teams.</div>
         <div className="text-xs md:text-lg text-white/70 text-center mx-auto">From next-gen startups to established entreprises.</div>
@@ -90,15 +90,15 @@ export default function Home() {
           <div className="text-xl md:text-4xl lg:text-5xl text-center lg:text-left min-w-xl md:w-sm lg:min-w-[400px] font-bold tracking-wide">Made for modern product teams  </div> 
           <div className="text-xs md:text-xl lg:text-2xl text-center mt-5 lg:mt-0 lg:text-left min-w-60 max-w-3xl text-white/70">Linear is shaped by the practices and principles that distinguish world-class product teams from the rest: relentless focus, fast execution, and a commitment to the quality of craft.</div>
         </div>
-        <div className="flex flex-row h-fit w-full items-center justify-center my-10 py-18 gap-8">
+        <div className="flex flex-col lg:flex-row h-fit w-full items-center justify-center my-10 py-18 gap-8">
           <div id="BlCard" className="px-6 py-2">
           <div style={{
               backgroundImage: `url(${Card1.src})`,
               backgroundSize: 'contain'
             }} className="min-w-[300px] min-h-[300px] z-35"></div>
               <div className="flex flex-row w-full justify-between items-center">
-                <div className="text-md">Purpose-built for <br/>project development</div>
-                <div className="rounded-full border-plus text-lg px-3 text-grey ">+</div>
+                <div className="text-md max-w-40">Purpose-built for project development</div>
+                <AddIcon />
               </div>
           </div>
           <div id="BlCard" className="px-6 py-4">
@@ -107,8 +107,8 @@ export default function Home() {
                 backgroundSize: 'contain'
               }} className="min-w-[300px] min-h-[300px] z-35"></div>
               <div className="flex flex-row w-full justify-between items-center">
-                <div className="text-md">Designed to move fast</div>
-                <div className="rounded-full border-plus text-lg px-3 text-grey ">+</div>
+                <div className="text-md max-w-40">Designed to move fast</div>
+                <AddIcon />
               </div>
           </div>
           <div id="BlCard" className="px-6 py-4">
@@ -117,8 +117,8 @@ export default function Home() {
                 backgroundSize: 'contain'
               }} className="min-w-[300px] min-h-[300px] z-35"></div>
               <div className="flex flex-row w-full justify-between items-center">
-                <div className="text-md">Crafted to perfection</div>
-                <div className="rounded-full border-plus text-lg px-3 text-grey ">+</div>
+                <div className="text-md max-w-40">Crafted to perfection</div>
+                <AddIcon />
               </div>
           </div>
 
