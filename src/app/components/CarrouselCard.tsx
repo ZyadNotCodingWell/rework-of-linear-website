@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-export const CardComp = ({ image, subtext, mainText, mainText2}) => {
+export const CardComp = ({ image, subtext, mainText, mainText2}: any) => {
 	return (
 		<div className="bg-black inline-block min-w-72 rounded-xl relative py-2 px-2 items-center object-none">
 			<div className="">
