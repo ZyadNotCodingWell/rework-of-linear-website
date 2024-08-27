@@ -1,6 +1,6 @@
 
 
-export const InsightPicture = ({className}) => {
+export const InsightPicture = ({className}: any) => {
 	return (
 <svg className={className} viewBox="" fill="none" height="600" width="1740">
   <g clip-path="url(#a)">
