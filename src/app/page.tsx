@@ -404,7 +404,7 @@ export default function Home() {
             <div className="flex">Workflow and integrations</div>
             <div className="flex"> › </div>
           </div>
-          <div className="flex flex-row items-center w-fit gap-2 py-2 text-xl md:text-4xl lg:text-5xl font-bold">Collaborate acrosstools and teams</div>
+          <div className="flex flex-row items-center w-fit gap-2 py-2 text-xl md:text-4xl lg:text-5xl font-bold">Collaborate across tools and teams</div>
           
           <div  className="flex flex-col items-start w-fit py-2 text-xs md:text-xl lg:text-2xl font-normal">
             <div className="text-white/70">Expand the capabilities of the Linear system with a wide variety of integrations that keep everyone in your organization aligned and focused.</div>
