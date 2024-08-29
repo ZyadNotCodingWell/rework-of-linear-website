@@ -8,6 +8,7 @@ import { useState } from "react";
 
 import { InsightPicture } from "../../public/insights";
 import Dashboard from "@/../public/dashboard.png";
+import Insights from "@/../public/Insights.png";
 import Card1 from "@/../public/BlCard1.png";
 import Card2 from "@/../public/BlCard2.png";
 import Card3 from "@/../public/BlCard3.png";
@@ -45,7 +46,7 @@ export default function Home() {
           <div className="text-md md:text-2xl text-white/70 max-w-xl mt-2 translate-y-2 font-normal">Meet the system for modern software development. Streamline issues, projects and product roadmaps.</div>
           <div className="flex flex-row gap-5 pt-14 [mask-image:linear-gradient(to_right,black,transparent_70%,transparent)]">
             <ButtonPrimary>Start Building</ButtonPrimary>
-            <ButtonSecondary className="">Introducing initiatives</ButtonSecondary>
+            <ButtonSecondary className="hidden md:flex">Introducing initiatives</ButtonSecondary>
           </div>
         </div>
       </div>
@@ -180,17 +181,17 @@ export default function Home() {
                 <div className="bg-carrousel-card justify-center backdrop-blur-xl min-h-28 md:min-h-36 w-72 md:w-96 border border-white/10 rounded-2xl px-10 py-4 absolute flex-col saturate-0 ease-in-out duration-300 hover:saturate-100 flex md:-skew-y-6 -translate-y-8 -translate-x-8 md:-translate-x-10 hover:-translate-y-12 md:hover:-translate-y-16">
                   <div className="text-error-red font-bold">✘ Off track</div>
                   <div className="mt-2">Unexpected roadblocks forced us to take a different...</div>
-                  <div className="font-normal mt-3 text-grey">Oct 3</div>
+                  <div className="font-normal mt-3 text-white/70">Oct 3</div>
                 </div>
                 <div className="bg-carrousel-card justify-center backdrop-blur-xl min-h-28 md:min-h-36 w-72 md:w-96 border border-white/10 rounded-2xl px-10 py-4 absolute flex-col saturate-0 ease-in-out duration-300 hover:saturate-100 flex md:-skew-y-6 hover:-translate-y-4 md:hover:-translate-y-8">
                   <div className="text-warning-yellow font-bold">!  At risk</div>
                   <div className="mt-2">Progress slowed down last week because</div>
-                  <div className="font-normal mt-3 text-grey">Oct 8</div>
+                  <div className="font-normal mt-3 text-white/70">Oct 8</div>
                 </div>
                 <div className="bg-carrousel-card justify-center backdrop-blur-xl min-h-28 md:min-h-36 w-72 md:w-96 border border-white/10 rounded-2xl px-10 py-4 absolute flex-col flex md:-skew-y-6 translate-x-8 md:translate-x-10 translate-y-8 hover:translate-y-2 md:hover:-translate-y-2 ease-in-out duration-300">
                   <div className="text-success-green font-bold">✔ On track</div>
                   <div className="mt-2">We are ready to launch next thursday</div>
-                  <div className="font-normal mt-3 text-grey">Sep 8</div>
+                  <div className="font-normal mt-3 text-white/70">Sep 8</div>
                 </div>
               </div>
             </div>
@@ -198,7 +199,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col lg:flex-row mt-0 py-14 border-plus-bot items-center gap-20 lg:gap-48 justify-between w-fit">
           <div className="flex flex-col h-474">
-            <div className="text-sm md:text-lg lg:text-2xl lg:max-w-48 font-semibold">Ideate and specify what to build next</div>
+            <div className="text-sm md:text-lg lg:text-2xl text-center items-center lg:max-w-48 font-semibold">Ideate and specify what to build next</div>
             <div className="flex flex-row lg:flex-col gap-12 lg:gap-4 mt-4 lg:mt-8">
               <div className="flex flex-col-reverse lg:flex-row text-xs md:text-md lg:text-xl gap-3 font-normal items-center" onClick={() => {setSelected1(true); setSelected2(false); setSelected3(false)}}>
                   <div className={ selected1 ? "h-1 w-full lg:w-1 lg:h-6 rounded-full -translate-y-2 lg:translate-y-0 bg-sucess-green" : "h-1 w-full lg:w-1 -translate-y-2 lg:translate-y-0 lg:h-6 rounded-full bg-gray"}></div>
@@ -243,7 +244,7 @@ export default function Home() {
                   fill="#FFFFFC"/>
                 Initiatives
               </div>
-              <div className="font-normal text-grey">Coordinate strategic product efforts.</div>
+              <div className="font-normal text-white/70">Coordinate strategic product efforts.</div>
             </div>
             <div className="flex flex-col w-48 lg:w-full gap-2 px-5">
               <div className=" flex flex-row items-center w-full gap-2 font-bold">
@@ -254,7 +255,7 @@ export default function Home() {
                   fill="#FFFFFC"/>
                 Cross-team projects
               </div>
-              <div className="font-normal text-grey">Collaborate across teams and departments.</div>
+              <div className="font-normal text-white/70">Collaborate across teams and departments.</div>
             </div>
           </div>
           <div className="flex flex-row justify-between md:justify-center w-full">
@@ -267,7 +268,7 @@ export default function Home() {
                   fill="#FFFFFC"/>
                 Milestones
               </div>
-              <div className="font-normal text-grey">Break projects down into concrete phases.</div>
+              <div className="font-normal text-white/70">Break projects down into concrete phases.</div>
             </div>
             <div className="flex flex-col w-48 lg:w-full gap-2 px-5">
               <div className=" flex flex-row items-center w-full gap-2 font-bold">
@@ -278,7 +279,7 @@ export default function Home() {
                   fill="#FFFFFC"/>
                 Progress insights
               </div>
-              <div className="font-normal text-grey">Track scope, velocity, and <br/> progress over time.</div>
+              <div className="font-normal text-white/70">Track scope, velocity, and progress over time.</div>
             </div>
           </div>
         </div>
@@ -303,107 +304,113 @@ export default function Home() {
         </div>
       </div>
       
-      <div id="Features_Section_2" className="flex flex-col relative justify-between overflow-hidden px-445 w-full items-center">
-        <div id="gradient-into-black" className="absolute -inset-x-36 inset-y-0 pointer-events-none bg-toBlack px-auto py-auto z-40"> </div>
+      <div id="Features_Section_2" className="flex flex-col relative px-11 md:px-24 justify-between overflow-hidden w-full items-center">
         <div className="flex flex-col border-plus-left lg:flex-row gap-auto justify-between w-full">
-          <div className="flex flex-col border-header-glass w-full items-center px-5 py-8 border-plus-left">
-            <div className="text-md font-bold w-fit mx-4">Build momentum with Cycles</div>
-            <div className="text-smd mt-1 w-fit text-grey mx-4">Create healthy routines and focus your <br/>team on what work should happen next.</div>
-            <Image 
-            src = "/Tracking_image1.JPG"
-            alt = "Interesting stuff"
-            width={374}
-            height={600} 
-            className="translate-x--14 pl-2 pt-5"/>
+          <div className="flex flex-col border-header-glass w-full items-center px-5 py-8">
+            <div className="text-md md:text-lg lg:text-xl font-bold w-fit mx-4">Build momentum with Cycles</div>
+            <div className="text-md md:text-lg lg:text-xl mt-1 w-fit text-white/70 mx-4">Create healthy routines and focus your team on what work should happen next.</div>
+            <div className="my-8 md:my-16 lg:my-28 [mask-image:linear-gradient(to_right,black,black_70%,transparent_95%)]">
+              <Image 
+              src = "/Tracking_image1.JPG"
+              alt = "Interesting stuff"
+              width={374}
+              height={600} 
+              /></div>
           </div>
-          <div className="flex flex-col border-header-glass w-full items-center px-5 py-8 border-plus-right">
-            <div className="text-md font-bold w-fit mx-4">Manage incoming work with Triage</div>
-            <div className="text-smd mt-1 w-fit text-grey mx-4">Review and assign incoming bug reports,<br/> feature requests, and other unplanned work.</div>
-            <Image 
-            src = "/Tracking_image2.JPG"
-            alt = "Interesting stuff"
-            width={400}
-            height={600} 
-            className="translate-x--14 pl-4 pt-5"/>
+          <div className="flex flex-col border-header-glass w-full items-center px-5 py-8">
+            <div className="text-md md:text-lg lg:text-xl font-bold w-fit mx-4">Manage incoming work with Triage</div>
+            <div className="text-md md:text-lg lg:text-xl mt-1 w-fit text-white/70 mx-4">Review and assign incoming bug reports,<br/> feature requests, and other unplanned work.</div>
+            <div className="my-8 md:my-16 lg:my-28 [mask-image:linear-gradient(to_right,black,black_70%,transparent_95%)]">
+              <Image 
+              src = "/Tracking_image2.JPG"
+              alt = "Interesting stuff"
+              width={400}
+              height={600} 
+              /></div>
           </div>
 
         </div>
 
-        <div className="flex flex-col mt-0 pt-14 items-center justify-left w-full">
-          <div className="flex flex-col w-full items-start">
-            <div className="text-md font-bold w-fit mx-44">Linear Insights</div>
-            <div className="text-smd mt-1 w-fit text-grey mx-44">Take the guesswork out of product planning<br/> with realtime, actionable data analytics.</div>
-            <div id="button_secondary" className="px-5 py-1 mt-6 ml-44 rounded-lg bg-grayvy">Learn more  ›</div>
-          </div>  
-          <div className="w-full border-plus-bot items-center -translate-y-24">
-            <InsightPicture 
-              className="translate-x-0"/>
-          </div>
+        <div id="Insights" className="flex flex-col pt-14 max-w-sm md:max-w-md lg:max-w-full">
+          
+            <div className="flex flex-col items-center lg:items-start lg:mx-0 text-center lg:text-start">
+              <div className="text-xs md:text-md lg:text-2xl font-semibold">Linear Insights</div>
+              <div className="text-xs md:text-md lg:text-xl my-3 text-white/70 max-w-56 md:max-w-60 lg:max-w-sm">Take the guesswork out of product planning with realtime, actionable data analytics.</div>
+              <div className="text-xs md:text-md lg:text-lg border border-white/30 rounded-lg px-3 py-1">Learn more  ›</div>
+            </div>
+          
+          <div className="min-w-[1500px] h-[450px] overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_40%,transparent)]" style={{
+            backgroundImage: `url(${Insights.src})`, backgroundSize: "cover", 
+          }} ></div>
         </div>
-
-        <div className="flex flex-row -translate-y-10 w-full px-36 justify-between items-center"> 
-          <div className="flex flex-col gap-2">
-            <div className=" flex flex-row items-center gap-2 text-xs font-bold">
-              <WorkflowIcon
-                className=""
-                width={16}
-                height={16}
-                fill="#FFFFFC"/>
-              Tailored workflows
+        
+        <div className="flex flex-col text-xs md:text-md lg:text-xl lg:flex-row mt-14 gap-8 lg:gap-10 w-full justify-between lg:justify-center items-center"> 
+          <div className="flex flex-row justify-between md:justify-center w-full">
+            <div className="flex flex-col w-48 lg:w-full gap-2 px-5">
+              <div className=" flex flex-row items-center gap-2 w-full font-bold">
+                <WorkflowIcon
+                  className=""
+                  width={16}
+                  height={16}
+                  fill="#FFFFFC"/>
+                Tailored workflows
+              </div>
+              <div className="font-normal text-white/70">Track progress across custom issue flows for your team.</div>
             </div>
-            <div className="text-xs font-normal text-grey">Track progress across custom <br/>issue flows for your team.</div>
+            <div className="flex flex-col w-48 lg:w-full gap-2 px-5">
+              <div className=" flex flex-row items-center w-full gap-2 font-bold">
+                <ViewIcon
+                  className=""
+                  width={16}
+                  height={16}
+                  fill="#FFFFFC"/>
+                Custom views
+              </div>
+              <div className="font-normal text-white/70">Switch between list and board. Group issues with swimlanes.</div>
+            </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <div className=" flex flex-row items-center gap-2 text-xs font-bold">
-              <ViewIcon
-                className=""
-                width={16}
-                height={16}
-                fill="#FFFFFC"/>
-              Custom views
+          <div className="flex flex-row justify-between md:justify-center w-full">
+            <div className="flex flex-col w-48 lg:w-full gap-2 px-5">
+              <div className=" flex flex-row items-center w-full gap-2 font-bold">
+                <FilterIcon
+                  className=""
+                  width={16}
+                  height={16}
+                  fill="#FFFFFC"/>
+                Filters
+              </div>
+              <div className="font-normal text-white/70">Refine issue lists down to what&apos;s most relevant to you.</div>
             </div>
-            <div className="text-xs font-normal text-grey">Switch between list and board.<br/>Group issues with swimlanes.</div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className=" flex flex-row items-center gap-2 text-xs font-bold">
-              <FilterIcon
-                className=""
-                width={16}
-                height={16}
-                fill="#FFFFFC"/>
-              Filters
+            <div className="flex flex-col w-48 lg:w-full gap-2 px-5">
+              <div className=" flex flex-row items-center w-full gap-2 font-bold">
+                <SLAIcon
+                  className=""
+                  width={16}
+                  height={16}
+                  fill="#FFFFFC"/>
+                SLAs
+              </div>
+              <div className="font-normal text-white/70">Automatically apply deadlines to time-sensitive tasks.</div>
             </div>
-            <div className="text-xs font-normal text-grey">Refine issue lists down to what’s<br/>most relevant to you.</div>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className=" flex flex-row items-center gap-2 text-xs font-bold">
-              <SLAIcon
-                className=""
-                width={16}
-                height={16}
-                fill="#FFFFFC"/>
-              SLAs
-            </div>
-            <div className="text-xs font-normal text-grey">Automatically apply deadlines to<br/>time-sensitive tasks.</div>
           </div>
         </div>
       </div>
       
-      <div id="Collaborations" className="flex flex-col bg-sectionProduct w-full justify-left items-center">
-        <div className="flex flex-row items-center w-full justify-between">
-          <div className="flex flex-col w-full px-52">
-            <div className="flex flex-row items-center w-fit gap-2 py-2">
-              <div className="flex w-4 h-2 text-xs bg-violet rounded-full"></div>
-              <div className="flex text-sm">Workflow and integrations</div>
-              <div className="flex text-sm "> › </div>
-            </div>
-            <div className="flex flex-row items-center w-fit gap-2 py-2 text-x3l font-bold">Collaborate across<br/>tools and teams</div>
+      <div id="Collaborations" className="flex flex-col bg-sectionProduct pt-24 px-11 md:px-24 w-full justify-left items-center">
+        <div className="flex flex-col w-full">
+          
+          <div className="flex flex-row items-center w-fit gap-2 py-2">
+            <div className="flex w-4 h-2 text-xs md:text-md lg:text-lg bg-violet rounded-full"></div>
+            <div className="flex">Workflow and integrations</div>
+            <div className="flex"> › </div>
           </div>
-          <div  className="flex flex-col items-start w-full py-2 text-smd leading-11">
-            <div className="text-grey w-full">Expand the capabilities of the Linear system<br/>with a wide variety of integrations that keep<br/>everyone in your organization aligned and focused.</div>
+          <div className="flex flex-row items-center w-fit gap-2 py-2 text-xl md:text-4xl lg:text-5xl font-bold">Collaborate acrosstools and teams</div>
+          
+          <div  className="flex flex-col items-start w-fit py-2 text-xs md:text-xl lg:text-2xl font-normal">
+            <div className="text-white/70">Expand the capabilities of the Linear system with a wide variety of integrations that keep everyone in your organization aligned and focused.</div>
           </div>
         </div>
-        <div id="Collaboration-scroller" className="flex relative w-[100vw] translate-y-20 pb-20 overscroll-x-hidden overflow-x-auto overflow-y-hidden">
+        <div id="Collaboration-scroller" className="flex relative w-[100vw] py-28 overscroll-x-hidden overflow-x-auto overflow-y-hidden [mask-image:linear-gradient(to_right,transparent_10%,black_35%,black_75%,transparent_90%)]">
           <div className="flex min-w-max space-x-14 mx-48">
             <CardComp 
             image = "/card1.jfif"
