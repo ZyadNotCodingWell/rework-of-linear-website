@@ -3,11 +3,11 @@ import { CardComp } from "@/app/components/CarrouselCard";
 
 export default function Collaborations() {
 	return (
-		<div className="bg-sectionProduct">
+		<div className="bg-sectionProduct py-24">
 
 		<div className="container self-center mx-auto w-full">
 
-		<div id="Collaborations" className="flex flex-col pt-24 px-11 md:px-24 w-full justify-left items-center">
+		<div id="Collaborations" className="flex flex-col px-11 md:px-24 w-full justify-left items-center">
 		<div className="flex flex-col w-full">
 			
 			<div className="flex flex-row items-center w-fit gap-2 py-2">

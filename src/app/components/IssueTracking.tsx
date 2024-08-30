@@ -3,7 +3,7 @@ import YellowSectionImage from "@/../public/task_tracking.png";
 
 export default function IssueTracking() {
 	return (
-		<div className="bg-sectionProduct">
+		<div className="bg-sectionProduct py-24">
 
 		<div className="container self-center mx-auto w-full">
 

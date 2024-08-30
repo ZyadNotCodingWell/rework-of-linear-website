@@ -15,7 +15,7 @@ export default function ProductFeaturesSection() {
 
 	return (
 
-		<div className="container self-center mx-auto w-full">
+		<div className="container self-center mx-auto w-full py-24">
 
 		<div id="Features_Section" className="flex flex-col relative justify-between px-11 md:px-24 w-full items-center overflow-x-hidden">
 		<div className="flex flex-col lg:flex-row gap-auto justify-between w-full border-plus-left">

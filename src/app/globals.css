@@ -27,17 +27,17 @@ body {
 }
 
 #card {
-  background-color: #1c1c1caf;
+  background-color: #ffffff0b;
   border-radius: 1rem;
   padding: 1rem;
   width: 100%;
   height: fill;
-  border-color: #1c1c1c;
+  border-color: #ffffff12;
   border-style: solid;
   border-width: 1px;
 }
 #card:hover{
-  background-color: #0b0b0b17;
+  background-color: #ffffff06;
   transition: 700ms;
 }
 #features-hover{

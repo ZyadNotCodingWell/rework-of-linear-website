@@ -3,7 +3,7 @@ import GreenSectionImage from "@/../public/product_section.png";
 
 export default function ProductDirection() {
 	return (
-		<div className="bg-sectionProduct">
+		<div className="bg-sectionProduct py-24">
 
 		<div className="container self-center mx-auto w-full">
 

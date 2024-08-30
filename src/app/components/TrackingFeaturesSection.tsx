@@ -7,7 +7,7 @@ import { ButtonSecondary } from "./Buttons";
 
 export default function IssueTrackingFeatures() {
 	return (
-		<div className="container self-center mx-auto w-full">
+		<div className="container self-center py-24 mx-auto w-full">
 
 		<div id="Features_Section_2" className="flex flex-col relative px-11 md:px-24 justify-between overflow-hidden w-full [mask-image:linear-gradient(to_right,transparent,black_20%,black_75%,transparent)] items-center">
 		<div className="flex flex-col border-plus-left lg:flex-row gap-auto justify-between w-full">
