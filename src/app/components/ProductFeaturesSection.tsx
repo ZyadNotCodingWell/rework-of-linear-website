@@ -14,7 +14,7 @@ export default function ProductFeaturesSection() {
   const[selected3, setSelected3] = useState(false);
 
 	return (
-		
+
 		<div className="container self-center mx-auto w-full">
 
 		<div id="Features_Section" className="flex flex-col relative justify-between px-11 md:px-24 w-full items-center overflow-x-hidden">
@@ -58,7 +58,7 @@ export default function ProductFeaturesSection() {
 		</div>
 		<div className="flex flex-col lg:flex-row mt-0 py-14 border-plus-bot items-center gap-20 lg:gap-48 justify-between w-fit">
 			<div className="flex flex-col h-474">
-				<div className="text-sm md:text-lg lg:text-2xl text-center items-center lg:max-w-48 font-semibold">Ideate and specify what to build next</div>
+				<div className="text-sm md:text-lg lg:text-2xl text-center items-center lg:max-w-56 font-semibold">Ideate and specify what to build next</div>
 				<div className="flex flex-row lg:flex-col gap-12 lg:gap-4 mt-4 lg:mt-8">
 					<div className="flex flex-col-reverse lg:flex-row text-xs md:text-md lg:text-xl gap-3 font-normal items-center" onClick={() => {setSelected1(true); setSelected2(false); setSelected3(false)}}>
 							<div className={ selected1 ? "h-1 w-full lg:w-1 lg:h-6 rounded-full -translate-y-2 lg:translate-y-0 bg-sucess-green" : "h-1 w-full lg:w-1 -translate-y-2 lg:translate-y-0 lg:h-6 rounded-full bg-gray"}></div>

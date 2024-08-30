@@ -19,7 +19,7 @@ const roboto = Roboto({
 
 export default function Home() {
   return (
-    <main className={`${roboto.className} flex w-full overflow-hidden flex-col py-36 mb-100 h-500 gap-4`}>
+    <main className={`${roboto.className} flex w-full overflow-hidden flex-col mb-100`}>
       
       <Hero />
       <CustomerSection /> 

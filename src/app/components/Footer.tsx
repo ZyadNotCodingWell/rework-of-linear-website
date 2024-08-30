@@ -4,7 +4,7 @@ import { LinearIcon } from "./Icons"
 
 export default function Footer(){
 	return(
-<div className="flex text-xs lg:text-lg overflow-hidden flex-col py-10 px-4 z-50 border bg-black/50 border-t-white/50 border-x-0">
+<div className="flex text-xs lg:text-lg overflow-hidden flex-col py-10 px-4 z-50 border bg-black/50 border-t-white/10 border-x-0">
 		<div className="">
 			<div className="flex flex-col lg:flex-row w-full lg:px-40 justify-between gap-4 lg:gap-16 lg:justify-start">
 				<div className="flex flex-col h-full align-left justify-between pb-5 w-full gap-1">

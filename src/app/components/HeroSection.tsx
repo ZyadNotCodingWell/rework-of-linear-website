@@ -3,7 +3,7 @@ import { ButtonPrimary, ButtonSecondary } from "@/app/components/Buttons";
 import Image from "next/image";
 
 export default function Hero() {
-	return (<div className="bg-sectionProduct">
+	return (<div className="bg-sectionProduct pt-36">
 
 	<div className="container self-center mx-auto w-full">
 		<div id="Hero-Section" className="flex flex-col px-11 md:px-24">

@@ -14,7 +14,7 @@ export const ButtonPrimary = ({children} : any) => {
 export const ButtonSecondary = ({children} : any) => {
 	return(
 		<button 
-			className="px-3 py-1 flex text-white min-w-24 flex-none justify-center bg-neutral-800 font-black tracking-wide text-md md:text-lg shadow-header-glass border-header-glass rounded-lg hover:bg-neutral-700 transition duration-300">
+			className="px-3 py-1 flex text-white min-w-24 flex-none justify-center bg-neutral-900 font-black tracking-wide text-md md:text-lg shadow-header-glass border-header-glass rounded-lg hover:bg-neutral-800 transition duration-300">
 			{children}
 		</button>
 	)

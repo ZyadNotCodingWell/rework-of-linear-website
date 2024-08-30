@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[linear-gradient(to_bottom_right,black,rgb(97, 106, 115))] relative`}>
+      <body className={`${inter.className} relative`}>
         <Header />
           {children}
         <Footer />

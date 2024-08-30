@@ -22,8 +22,8 @@ export default function Header() {
 
 
   return (
-	<div className={`${roboto.className} text-md md:text-lg fixed w-full flex flex-none items-center justify-center py-0 md:py-3 z-50`}>
-	<div className={`flex flex-col w-full md:w-fit py-3 md:py-2 lg:mx-18 md:my-2 px-3 gap-5 justify-between bg-white/10 md:bg-white/5 shadow-header-glass backdrop-blur-3xl md:backdrop-blur-lg md:rounded-lg z-50 group`}
+	<div className={`${roboto.className} text-md md:text-lg fixed w-full flex items-center justify-center md:pt-5 z-50`}>
+	<div className={`flex flex-col w-full md:w-fit py-3 md:py-2 lg:mx-18 px-3 gap-5 justify-between bg-white/10 md:bg-white/5 shadow-header-glass backdrop-blur-3xl md:backdrop-blur-lg md:rounded-lg z-50 group`}
 			onMouseLeave={() => { setShowFeatures(false); setShowCompany(false)} }>
 	<div className="flex gap-4 items-center justify-between w-full">
 			<Link href="">
