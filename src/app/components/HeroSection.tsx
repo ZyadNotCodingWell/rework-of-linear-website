@@ -13,7 +13,7 @@ export default function Hero() {
 			<div className="flex flex-row gap-5 pt-14">
 				<ButtonPrimary className="">Start Building</ButtonPrimary>
 				<div 
-				className="px-3 py-1 flex text-white min-w-24 [mask-image:linear-gradient(to_bottom_right,black_20%,transparent)] flex-none justify-center bg-transparent border border-white/20 font-normal tracking-wide text-md md:text-lg rounded-lg">
+				className="px-3 py-1 bg-neutral-950 hover:bg-neutral-800 flex text-white min-w-24 [mask-image:linear-gradient(to_bottom_right,black_20%,transparent)] flex-none justify-center bg-transparent border border-white/20 font-normal tracking-wide text-md md:text-lg rounded-lg">
 					Introducing initiatives
 				</div>
 			</div>
