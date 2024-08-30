@@ -23,9 +23,9 @@ export default function Header() {
 
   return (
 	<div className={`${roboto.className} text-md md:text-lg fixed w-full flex flex-none items-center justify-center py-0 md:py-3 z-50`}>
-	<div className={`flex flex-col w-full md:w-fit py-3 md:py-2 mx-0 lg:mx-18 my-0 md:my-2 px-3 gap-3 justify-between bg-header-glass/10 md:bg-header-glass shadow-header-glass backdrop-blur-3xl md:backdrop-blur-header-glass md:rounded-header-glass z-50 group`}
+	<div className={`flex flex-col w-full md:w-fit py-3 md:py-2 lg:mx-18 md:my-2 px-3 gap-5 justify-between bg-white/10 md:bg-white/5 shadow-header-glass backdrop-blur-3xl md:backdrop-blur-lg md:rounded-lg z-50 group`}
 			onMouseLeave={() => { setShowFeatures(false); setShowCompany(false)} }>
-	<div className="flex px-0 py-0 gap-4 items-center justify-between w-full">
+	<div className="flex gap-4 items-center justify-between w-full">
 			<Link href="">
 				<div className={`${roboto.className} items-center`}>
 					<LinearIcon 
@@ -33,63 +33,65 @@ export default function Header() {
 					fill={'#FFFFFF'}/>
       	</div>
 			</Link>
-      <nav className="hidden md:flex w-fit justify-between px-0">
-			<ul className="flex mx-5 justify-between w-fit gap-md px-0">
-      <li className="mx-5">
-        <Link href="#">
-          <div className={`${roboto.className} text-navItems peer hover:underline hover:underline-offset-2 hover:decoration-white hover:decoration-1`}
-					      onMouseEnter={() => { setShowFeatures(true); setShowCompany(false)}}>
-            Features
-          </div>
-        </Link>
-      </li>
-      <li className="hidden lg:block mx-5">
-        <Link href="#">
-          <div className={`${roboto.className} text-navItems hover:underline hover:underline-offset-2 hover:decoration-white hover:decoration-1`}>
-            Method
-          </div>
-        </Link>
-      </li>
-      <li className="hidden lg:block mx-5">
-        <Link href="#">
-          <div className={`${roboto.className} text-navItems hover:underline hover:underline-offset-2 hover:decoration-white hover:decoration-1`}>
-            Customers
-          </div>
-        </Link>
-      </li>
-      <li className="hidden lg:block mx-5">
-        <Link href="#">
-          <div className={`${roboto.className} text-navItems hover:underline hover:underline-offset-2 hover:decoration-white hover:decoration-1`}>
-            Changelog
-          </div>
-        </Link>
-      </li>
-      <li className="mx-5">
-        <Link href="#">
-          <div className={`${roboto.className} text-navItems hover:underline hover:underline-offset-2 hover:decoration-white hover:decoration-1`}>
-            Pricing
-          </div>
-        </Link>
-      </li>
-      <li className="mx-5">
-        <Link href="#">
-          <div className={`${roboto.className} text-navItems mr_0 hover:underline hover:underline-offset-2 hover:decoration-white hover:decoration-1`}
-					onMouseEnter={() => { setShowFeatures(false); setShowCompany(true)}}>
-            Company
-          </div>
-        </Link>
-      </li>
-      <li>
-        <Link href="#" className="hidden lg:block mx-5">
-          <div className={`${roboto.className} text-navItems hover:underline hover:underline-offset-2 hover:decoration-white hover:decoration-1`}>
-            Contacts
-          </div>
-        </Link>
-      </li>
+      <nav className="hidden md:flex w-fit lg:-translate-x-6">
+			<ul className="flex justify-center gap-4 lg:text-md">
+      	<li className="">
+      	  <Link href="#">
+      	    <div className={`${roboto.className} text-white/60 transition hover:text-white/90 hover:underline`}
+						      onMouseEnter={() => { setShowFeatures(true); setShowCompany(false)}}>
+      	      Features
+      	    </div>
+      	  </Link>
+      	</li>
+      	<li className="hidden lg:block">
+      	  <Link href="#">
+      	    <div className={`${roboto.className} text-white/60 transition hover:text-white/90 hover:underline`}>
+      	      Method
+      	    </div>
+      	  </Link>
+      	</li>
+      	<li className="hidden lg:block">
+      	  <Link href="#">
+      	    <div className={`${roboto.className} text-white/60 transition hover:text-white/90 hover:underline`}>
+      	      Customers
+      	    </div>
+      	  </Link>
+      	</li>
+      	<li className="hidden lg:block">
+      	  <Link href="#">
+      	    <div className={`${roboto.className} text-white/60 transition hover:text-white/90 hover:underline`}>
+      	      Changelog
+      	    </div>
+      	  </Link>
+      	</li>
+      	<li className="">
+      	  <Link href="#">
+      	    <div className={`${roboto.className} text-white/60 transition hover:text-white/90 hover:underline`}>
+      	      Pricing
+      	    </div>
+      	  </Link>
+      	</li>
+      	<li className="">
+      	  <Link href="#">
+      	    <div className={`${roboto.className} text-white/60 transition hover:text-white/90 hover:underline`}
+						onMouseEnter={() => { setShowFeatures(false); setShowCompany(true)}}>
+      	      Company
+      	    </div>
+      	  </Link>
+      	</li>
+      	<li>
+      	  <Link href="#" className="hidden lg:block">
+      	    <div className={`${roboto.className} text-white/60 transition hover:text-white/90 hover:underline`}>
+      	      Contacts
+      	    </div>
+      	  </Link>
+      	</li>
     </ul>
     </nav>
 		<div className={`flex gap-5`}>
-			<ButtonSecondary>Log in</ButtonSecondary>
+			<ButtonSecondary>Log in
+				<div className="bg-neutral-600 font-bold rounded-md ml-2 px-2.5">L</div>
+			</ButtonSecondary>
 			<ButtonPrimary>Sign up</ButtonPrimary>
 		</div>
 

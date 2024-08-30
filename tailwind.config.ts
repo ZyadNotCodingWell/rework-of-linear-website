@@ -1,6 +1,10 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  container:{
+    center: true,
+    self: "center",
+  },
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -27,7 +31,6 @@ const config: Config = {
         'success-green': '#71CE60',
         'error-red': '#FF0000',
         'warning-yellow': '#FFB300',
-
       },
       animation: {
         'ease-in-out': 'ease-in-out 0.5s',
@@ -67,40 +70,6 @@ const config: Config = {
       },
       borderRadius: {
         'header-glass': "14px",
-      },
-      padding: {
-        xs: "0.8rem",
-        sm: "1rem",
-        md: "1.4rem",
-        lg: "1.8rem",
-        xl: "2.4rem",
-        x2l: "2.8rem",
-        x3l: "3.2rem",
-        x4l: "3.6rem",
-        x5l: "4rem"
-      },
-      margin: {
-        xs: "0.8rem",
-        sm: "1rem",
-        md: "1.4rem",
-        lg: "1.8rem",
-        xl: "2.4rem",
-        x2l: "2.8rem",
-        x3l: "3.2rem",
-        x4l: "3.6rem",
-        x5l: "4rem"
-      },
-      
-      typography: {
-        navItems: {
-          text: '1rem',
-          color: '#FFFFFF', 
-          '&:hover': {
-            textDecoration: 'underline',
-            textDecorationColor: 'white',
-            textDecorationThickness: '2px',
-          },
-        },
       },
     },
   },
