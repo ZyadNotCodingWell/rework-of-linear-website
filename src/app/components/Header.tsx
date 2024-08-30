@@ -22,7 +22,7 @@ export default function Header() {
 
 
   return (
-	<div className={`${roboto.className} text-md md:text-lg fixed w-full flex items-center justify-center md:pt-5 z-50`}>
+	<div className={`${roboto.className} text-sm md:text-md fixed w-full flex items-center justify-center md:pt-5 z-50`}>
 	<div className={`flex flex-col w-full md:w-fit py-3 md:py-2 lg:mx-18 px-3 gap-5 justify-between bg-white/10 md:bg-white/5 shadow-header-glass backdrop-blur-3xl md:backdrop-blur-lg md:rounded-lg z-50 group`}
 			onMouseLeave={() => { setShowFeatures(false); setShowCompany(false)} }>
 	<div className="flex gap-4 items-center justify-between w-full">
@@ -34,9 +34,9 @@ export default function Header() {
       	</div>
 			</Link>
       <nav className="hidden md:flex w-fit lg:-translate-x-6">
-			<ul className="flex justify-center gap-4 lg:text-md">
+			<ul className="flex justify-center gap-10 lg:text-md">
       	<li className="">
-      	  <Link href="#">
+      	  <Link href="/features">
       	    <div className={`${roboto.className} text-white/60 transition hover:text-white/90 hover:underline`}
 						      onMouseEnter={() => { setShowFeatures(true); setShowCompany(false)}}>
       	      Features
@@ -123,8 +123,8 @@ export default function Header() {
 
 	</div>
 
-	<div id="company-hover" className={showCompany ? 'flex flex-row w-full min-h-12 mb-3 justify-between items-center gap-1 transition duration-500 anmate-ease-in-out opacity-100 transform scale-100 will-change-transform will-change-opacity' : 'hidden transition duration-500 animate-ease-in-out opacity-0 transform scale-0 will-change-transform will-change-opacity'}>
-		<div className="flex flex-col gap-1 w-full"> 
+	<div id="company-hover" className={showCompany ? 'flex flex-row flex-none w-full min-h-16 mb-3 justify-between items-center gap-1 transition duration-500 anmate-ease-in-out opacity-100 transform scale-100 will-change-transform will-change-opacity' : 'hidden transition duration-500 animate-ease-in-out opacity-0 transform scale-0 will-change-transform will-change-opacity'}>
+		<div className="flex flex-col gap-1 w-full min-h-full"> 
 			<div id="card" className="w-full flex gap-3 h-full">
 				<div className="text-md md:text-lg">Blog</div>
 				<div id="card-text" className="text-card text-sm md:text-md py-1  ">Read reccent news</div>
@@ -139,11 +139,11 @@ export default function Header() {
 			</div>
 			
 		</div>
-		<div id="card" className="flex flex-col w-full h-full ">
+		<div id="card" className="flex flex-col w-full min-h-full ">
 			<div className="text-md md:text-lg">Carreers</div>
 			<div id="card-text" className="text-card text-sm md:text-md py-1  ">Help us bring magic back to software</div>
 		</div>
-		<div id="card" className="flex flex-col w-full h-full">
+		<div id="card" className="flex flex-col w-full min-h-full">
 			<div className="text-md md:text-lg">About</div>
 			<div id="card-text" className="text-card text-sm md:text-md py-1  ">Meet the team behind Linear</div>
 		</div>

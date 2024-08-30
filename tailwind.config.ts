@@ -38,7 +38,8 @@ const config: Config = {
       backgroundImage :{
         'custom-gradient': 'linear-gradient(155deg, rgba(0,0,0,1) 8%, rgba(35,35,35,1) 24%, rgba(0,0,0,1) 45%);',
         'section' : 'linear-gradient(180deg, transparent, rgba(97, 106, 115, .22) 30%, rgba(97, 106, 115, .22) 70%, rgba(97, 106, 115, 0));',
-        'sectionProduct' : 'linear-gradient(135deg, transparent, rgba(97, 106, 115, .22) 40%, rgba(97, 106, 115, 0));',
+        'sectionProduct' : 'linear-gradient(45deg, transparent, rgba(97, 106, 115, .22) 40%, rgba(97, 106, 115, 0));',
+        'sectionRadial' : 'radial-gradient(75%_75%_at_center_center,rgb(255,255,255)_30%,transparent_87%,black)',
         "toBlack" : 'linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 85%);'
       },
       backgroundColor: {

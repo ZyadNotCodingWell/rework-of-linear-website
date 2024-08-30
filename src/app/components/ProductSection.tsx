@@ -6,7 +6,7 @@ import Card3 from "@/../public/BlCard3.png";
 
 export default function ProductSection() {
 	return (
-		<div className="bg-sectionProduct">
+		<div className="bg-[radial-gradient(80%_150%_at_center_bottom,rgb(97,106,115,0.2)_20%,transparent_87%)]">
 
 		<div className="container self-center mx-auto w-full">
 
