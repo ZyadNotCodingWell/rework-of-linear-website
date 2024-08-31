@@ -90,7 +90,7 @@ export default function Header() {
     </nav>
 		<div className={`flex gap-5`}>
 			<ButtonSecondary>Log in
-				<div className="bg-neutral-600 font-bold rounded-md ml-2 px-2.5">L</div>
+				<div className="bg-neutral-600 font-bold rounded-sm ml-2 px-1.5">L</div>
 			</ButtonSecondary>
 			<ButtonPrimary>Sign up</ButtonPrimary>
 		</div>
