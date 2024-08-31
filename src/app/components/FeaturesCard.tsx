@@ -35,13 +35,13 @@ export default function FeaturesCard({ BackgroundImage, LogoImage, Title, Text }
       <div
         className="w-60 lg:w-80 min-h-44 max-h-44 flex flex-none z-0"
         style={{ backgroundImage: `url(${BackgroundImage})`, backgroundSize: "cover", backgroundPositionX: "-7px" }}></div>
-      <div className="w-80 h-32 flex flex-row flex-none gap-2 p-4 -translate-y-2">
+      <div className="w-60 lg:w-80 h-32 flex flex-row flex-none gap-2 p-4 -translate-y-2">
         <div className="flex min-w-8 h-full items-start pt-[5px] justify-center saturate-0 brightness-200">
           <Image src={LogoImage} alt="Logo" width={16} height={16} />
         </div>
         <div className="flex flex-col items-start gap-1 tracking-wide justify-start">
           <div className="font-semibold text-base">{Title}</div>
-          <div className="font-thin text-sm text-white/40 max-w-60">{Text}</div>
+          <div className="font-thin text-xs lg:text-sm text-white/40 max-w-60">{Text}</div>
         </div>
       </div>
       <div
