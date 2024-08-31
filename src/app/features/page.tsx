@@ -46,7 +46,7 @@ const Features = () => {
 			<FeaturesText 
 			title="Secure"
 			text="Enterprise-grade security, state-of-the-art encryption, advanced identity management, admin controls, and much more. Everything in Linear is designed to keep your data safe and secure. Because your business is nobody else&apos;s business."			
-			background="linear-gradient(285.49deg, rgb(148, 151, 157) -14.61%, rgb(118, 124, 175) 106.06%) " />
+			background="linear-gradient(285.49deg, rgb(148, 151, 157) -14.61%, rgb(118, 124, 175) 106.06%)" />
 			<SecureCards />
 			<div className="min-w-full min-h-px mt-16 bg-[linear-gradient(to_right,transparent_10%,rgb(255,255,255,0.15)_50%,transparent_90%)]"></div>
 		</main>
